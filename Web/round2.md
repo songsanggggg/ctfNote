@@ -1,16 +1,16 @@
 # Unboxing
 
-![image-20250708163116174](/home/songsanggggg/ctfNote/CTF/.\assets\image-20250708163116174.png)
+![image-20250708163116174](.\assets\image-20250708163116174.png)
 
 ​	访问地址我们看到了如下页面，结合题目描述中申先生的账号 ID 是 6，密码的 md5 是 6d8fc80ae8d10ce7d179d9bef28df666，我们就可以获得一个登录账号密码。
 
 ​	本题目中的密码通过了md5加密，我们可以通过[md5在线解密破解,md5解密加密](https://www.cmd5.com/default.aspx)这个网站，进行解密，解密结果为kaihe。
 
-![image-20250708163540224](/home/songsanggggg/ctfNote/CTF/.\assets\image-20250708163540224.png)
+![image-20250708163540224](.\assets\image-20250708163540224.png)
 
 ​	通过分析发现，在cookie中有一个uid值为6，怀疑该网站存在平级跨权访问漏洞，修改cookie的值为1，显示结果如下。
 
-![image-20250708163721656](/home/songsanggggg/ctfNote/CTF/.\assets\image-20250708163721656.png)
+![image-20250708163721656](.\assets\image-20250708163721656.png)
 
 ​	依次访问我们就可以拿到flag。
 
@@ -18,7 +18,7 @@
 
 # 图书馆
 
-![image-20250708164521012](/home/songsanggggg/ctfNote/CTF/.\assets\image-20250708164521012.png)
+![image-20250708164521012](.\assets\image-20250708164521012.png)
 
 ​	本题目中直接把账号密码传入了sql语句，因此这里有了sql注入点，我们可以构造`admin' OR '1'='1`，这样sql语句就成了`SELECT * FROM users WHERE username = '`admin' OR '1'='1' AND password = ''，条件恒为1，这样就可以登录进入系统里。
 

@@ -43,3 +43,5 @@ eyJyb2xlIjoiYWRtaW4ifQ.aH3jIg.CjV7ebNim3aea3wYjVf_oaWPgFU
 ```
 
 ​	修改cookie后访问直接拿到flag。
+
+# ez-java
