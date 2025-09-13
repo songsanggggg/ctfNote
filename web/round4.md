@@ -44,4 +44,24 @@ eyJyb2xlIjoiYWRtaW4ifQ.aH3jIg.CjV7ebNim3aea3wYjVf_oaWPgFU
 
 ​	修改cookie后访问直接拿到flag。
 
+可以使用flask-unsign爆破
+
+```shell
+# flask-unsign
+  -u, --unsign
+       Attempts to crack the session's signature by iterating over a given wordlist with commonly used .
+
+  --wordlist, -w WORDLIST
+       Note: this argument is affected by the "--no-literal-eval" argument.
+
+```
+
+JWT使用jwt.io，线下可以使用
+
+可以使用修改算法为none绕过
+
+爆破使用jwtcracker
+
+爆破字典fu z
+
 # ez-java
