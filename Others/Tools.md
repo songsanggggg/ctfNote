@@ -63,5 +63,5 @@
 
 ## 目录
 
-- **dirb**
-- **dirsearch**
+- **dirb**https://github.com/v0re/dirb
+- **dirsearch**https://github.com/maurosoria/dirsearch
